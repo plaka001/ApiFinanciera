@@ -1,0 +1,12 @@
+E:\Estudio\.Net Core\Sistema Financiero\ApiFinanciera\Domain\bin\Debug\net8.0\Domain.deps.json
+E:\Estudio\.Net Core\Sistema Financiero\ApiFinanciera\Domain\bin\Debug\net8.0\Domain.dll
+E:\Estudio\.Net Core\Sistema Financiero\ApiFinanciera\Domain\bin\Debug\net8.0\Domain.pdb
+E:\Estudio\.Net Core\Sistema Financiero\ApiFinanciera\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+E:\Estudio\.Net Core\Sistema Financiero\ApiFinanciera\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Estudio\.Net Core\Sistema Financiero\ApiFinanciera\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+E:\Estudio\.Net Core\Sistema Financiero\ApiFinanciera\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+E:\Estudio\.Net Core\Sistema Financiero\ApiFinanciera\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+E:\Estudio\.Net Core\Sistema Financiero\ApiFinanciera\Domain\obj\Debug\net8.0\Domain.dll
+E:\Estudio\.Net Core\Sistema Financiero\ApiFinanciera\Domain\obj\Debug\net8.0\refint\Domain.dll
+E:\Estudio\.Net Core\Sistema Financiero\ApiFinanciera\Domain\obj\Debug\net8.0\Domain.pdb
+E:\Estudio\.Net Core\Sistema Financiero\ApiFinanciera\Domain\obj\Debug\net8.0\ref\Domain.dll
