@@ -32,6 +32,31 @@ namespace Infrastructure.Migrations
                     table.PrimaryKey("PK_Usuarios", x => x.Id);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Categorias",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Nombre = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
+                    Tipo = table.Column<int>(type: "int", nullable: false),
+                    UsuarioId = table.Column<Guid>(type: "uniqueidentifier", maxLength: 200, nullable: true),
+                    FechaCreacion = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Categorias", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Categorias_Usuarios_UsuarioId",
+                        column: x => x.UsuarioId,
+                        principalTable: "Usuarios",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Categorias_UsuarioId",
+                table: "Categorias",
+                column: "UsuarioId");
+
             migrationBuilder.CreateIndex(
                 name: "IX_Usuarios_CorreoElectronico",
                 table: "Usuarios",
@@ -43,6 +68,9 @@ namespace Infrastructure.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Categorias");
+
             migrationBuilder.DropTable(
                 name: "Usuarios");
         }
