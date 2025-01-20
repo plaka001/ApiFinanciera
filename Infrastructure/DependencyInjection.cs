@@ -1,6 +1,7 @@
 ﻿using Application.Abstractions.Data;
 using Application.Abstractions.Email;
 using Domain.Abstractions;
+using Domain.Categorias.Repository;
 using Domain.Usuarios.Repository;
 using Infrastructure.Data;
 using Infrastructure.Email;
@@ -28,6 +29,7 @@ public static class DependencyInjection
 
         services.AddTransient<IEmailService, EmailService>();
         services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+        services.AddScoped<ICategoriaRepository,CategoriaRepository>();
 
         services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<ApplicationDbContext>());
 
